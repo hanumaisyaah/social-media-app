@@ -1,0 +1,75 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: teal;
+}
+h1 {
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  margin: 0px;
+  padding: 0px;
+  color: #999;
+}
+
+div.wrap {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+}
+
+div.wrap div {
+  margin: 50px 0;
+}
+
+.buttonContainer{
+	width: 100%;
+	display: flex;
+	gap : 20px;
+}
+
+label{
+	font-size: 15px;
+}
+
+input{
+	width: 100%;
+	border: none;
+	border-bottom :rgb(17, 5, 37) 1px solid;
+	height: 30px;
+}
+
+input::focus{
+	border: none !important;
+	border-bottom :#EA2E49 1px solid !important;
+}
+
+
+.btnCustom{
+	width: 170px !important;
+	padding: 14px 0px !important;
+	height: 50px;
+	border-radius: 40px !important;
+	background: rgb(17, 5, 37) !important;
+	color : white !important;
+	border: none !important;
+	font-size: 15px !important;
+}
+
+.btnCustomOutline{
+	width: 150px !important;
+	padding: 14px 0px !important;
+	height: 50px;
+	border-radius: 40px !important;
+	border: rgb(17, 5, 37) 1px solid !important;
+	background : white !important;
+	color:rgb(17, 5, 37) !important;
+	font-size: 15px !important;
+}
+
+
