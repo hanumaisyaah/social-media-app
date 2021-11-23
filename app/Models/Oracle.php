@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-
+use Aws\S3\Exception\S3Exception;
+use FFI\Exception;
 use Carbon\Carbon;
 use DB;
 class Oracle
@@ -56,7 +57,7 @@ function upload_file_oracle($bucket_name, $folder_name = '', $file_name)
     $s3 = $this->get_oracle_client($endpoint);
     $s3->getEndpoint();
     
-    $file_url = "https://objectstorage.ap-osaka-1.oraclecloud.com/p/xpUEKDgXpb4wn47yNMF7gLnY-zc-XVm6j_CXcNbg9Uxf-x79YKSSwjKDQf0C2vTf/n/axeskwlnngtr/b/test-uts/o/{$keyname}";
+    $file_url = "https://objectstorage.ap-osaka-1.oraclecloud.com/p/925NLj0gbpSsa9F__HN3Iu8AR-Z0LETOXwZrMjIIEKI5I7KJ_Nen3G6K1Ng7Nfuh/n/axgpglbdhlhl/b/bucket-Mid/o/{$keyname}";
     try {
         $s3->putObject(array(
             'Bucket' => $bucket_name,
@@ -75,8 +76,8 @@ function upload_file_oracle($bucket_name, $folder_name = '', $file_name)
 
 	public function upFileOracle($file_name)
 	{
-		$bucket_name='test-uts';
-		$folder_name='uts';
+		$bucket_name='bucket-Mid';
+		$folder_name='mid';
 		$upload = $this->upload_file_oracle($bucket_name, $folder_name, $file_name);
 		return $upload;
 	}

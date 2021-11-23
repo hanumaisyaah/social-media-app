@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="dd_heading mt-5">
-		<h1 class="text-center">SOCIAZE</h1>
+		<h1 class="text-center">Phonto</h1>
 		<h3 class="text-center">Place for you to photo story</h3>
 		<br>
 		<br>
@@ -42,7 +42,7 @@
 
 	<footer>
 		<div>
-			<center><h5>&copy Sociaze 2021</h5></center>
+			<center><h5>&copy Phonto 2021</h5></center>
 		</div>
 	</footer>
 </body>
